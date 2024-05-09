@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: Poppins-B ;
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins-X ;
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins-R ;
+    src: url(./age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+}
+:root{
+    /* ### Primary */
+
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: #716f6f;
+--Off-black: hsl(0, 0%, 8%);
+} 
+body {
+    background-color: var(--Off-white);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+   /*  padding-top: 5rem; */
+  }
+  .parent {
+    background-color: white;
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 1.5rem 1.5rem 7rem 1.5rem;
+  }
+ /*  img {
+    
+  } */
+  .errMessage {
+    font-size: 0.7rem;
+    width: 10ch;
+    color: var(--Light-red);
+    display: none;
+  }
+  .invalid {
+    font-size: 0.7rem;
+    width: 10ch;
+    color: var(--Light-red);
+    display: none;
+  }
+  .inputs > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .inputs {
+    font-family: Poppins-B;
+    color: var(--Smokey-grey);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+   
+  }
+  input {
+    width: 4rem;
+    height: 2rem;
+    border: solid 1.5px var(--Off-white);
+    border-radius: 10%;
+    padding-left: 0.5rem;
+   
+  }
+  .line {
+    border-bottom: solid 2px var(--Light-grey);
+    margin: 3rem 0 3rem 0;
+  }
+  .Stroke {
+    position: relative;
+  }
+  .arrow {
+    background: var(--Purple);
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .Returned {
+    font-size: 3em;
+    font-family: Poppins-X;
+  }
+  span{
+    color: var(--Purple);
+  }
+  @media screen and (min-width: 768px) {
+    .arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      padding: 1rem;
+      transform: translate(0, -50%);
+    }
+    .line{
+      width: 30rem;
+    }
+    .inputs{
+      justify-content:flex-start;
+      font-size: 1.5rem;
+    }
+    input{
+      width: 5rem;
+      height: 3rem;
+      border: solid 0.15rem var(--Off-white);
+    }
+    .parent {
+      padding: 3rem 3rem 3rem 3rem;;
+    }
+    .Returned{
+      font-size: 5em;
+    }
+  }
+  @media screen and (orientation: landscape) {
+    .Returned{
+      font-size: 3em;
+    }
+    input{
+      width: 4rem;
+      height: 2rem;
+      border: solid 1.5px var(--Off-white);
+    }
+    .inputs{
+      justify-content:flex-start;
+      font-size: 1rem;
+    }
+    .line{
+      width: 25rem;
+    }
+
+  }

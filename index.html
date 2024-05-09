@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="">
+        <form action="collectData" class="inputs">
+          <div>
+            <label for="dayLabel" id="dayLabel"> DAY</label>
+            <input type="number" class="day" placeholder="DD" />
+            <p class="errMessage">The field is reqiured</p>
+            <p class="invalid">Must be a valid day</p>
+          </div>
+          <div>
+            <label for="monthLabel" id="monthLabel"> MONTH</label>
+            <input type="number" class="month" placeholder="MM" />
+            <p class="errMessage">The field is reqiured</p>
+            <p class="invalid">Must be a valid month</p>
+          </div>
+          <div>
+            <label for="yearLabel" id="yearLabel"> YEAR</label>
+            <input type="number" class="year" placeholder="YY" />
+            <p class="errMessage">The field is reqiured</p>
+            <p class="invalid">Must be in the past</p>
+          </div>
+        </form>
+      </div>
+      <div class="Stroke">
+        <div class="line"></div>
+        <img
+          src="./age-calculator-app-main//assets/images/icon-arrow.svg"
+          alt="Arrow"
+          class="arrow"
+        />
+      </div>
+      <div class="Returned Data">
+        <p><span> - - </span> years</p>
+        <p><span> - - </span> months</p>
+        <p><span> - - </span> days</p>
+      </div>
+    </div>
+  </body>
+</html>
