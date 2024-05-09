@@ -5,15 +5,15 @@
 }
 @font-face {
     font-family: Poppins-B ;
-    src: url(/assets/fonts/Poppins-Bold.ttf);
+    src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
     font-family: Poppins-X ;
-    src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
 }
 @font-face {
     font-family: Poppins-R ;
-    src: url(/assets/fonts/Poppins-Regular.ttf);
+    src: url(./assets/fonts/Poppins-Regular.ttf);
 }
 :root{
     /* ### Primary */
